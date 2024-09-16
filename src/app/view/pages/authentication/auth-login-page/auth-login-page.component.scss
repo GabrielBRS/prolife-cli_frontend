@@ -1,0 +1,275 @@
+.body{
+  width: 100%;
+  height: 100%;
+
+  .body-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+
+    .body-card{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      align-content: center;
+      margin-top: 10%;
+
+      .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        width: 300px;
+        height: 350px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        border: 1px solid rgb(238, 221, 221);
+        box-shadow: 5px 5px rgb(90, 86, 86);
+
+        .show-alert{
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 100px;
+          width: 303px;
+          height: 60px;
+          border-radius: 10px;
+          background-color: rgb(216, 142, 142);
+
+          .itens-alert-empty{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-self: flex-start;
+            align-content: center;
+            flex: 1;
+            margin-left: 15px;
+            color: red;
+
+
+            .icon{
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              align-self: center;
+              align-content: center;
+              margin-right: 5px;
+              svg{
+                width: 15px;
+                height: 15px;
+                fill: red;
+              }
+            }
+          }
+
+          .itens-alert-not-empty{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-self: flex-start;
+            align-content: center;
+            flex: 1;
+            margin-left: 15px;
+            color: green;
+
+            .icon{
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              align-self: center;
+              align-content: center;
+              margin-right: 5px;
+
+              svg{
+                width: 15px;
+                height: 15px;
+                fill: green;
+              }
+            }
+          }
+        }
+
+        .title{
+          display: flex;
+          flex-direction: column;
+          font-family: Staatliches;
+          font-size: 38px;
+          letter-spacing: 1px;
+          margin-top: 20px;
+          margin-bottom: 5px;
+        }
+
+        .choose-type-login{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-self: center;
+
+          .welcome{
+            font-family: Staatliches;
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
+
+          .text{
+            font-family: Philosopher;
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+
+          .buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 8px;
+
+            button{
+              font-family: Philosopher;
+              color: white;
+              background-color: rgb(75, 75, 196);
+              margin-left: 5px;
+              border: 1px solid black;
+              border-radius: 10px;
+              &:hover{
+                background-color: red;
+              }
+            }
+          }
+        }
+
+        .form-email{
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          align-self: flex-start;
+          margin-bottom: 10px;
+          margin-left: 10px;
+
+          .email-label{
+            font-family: Staatliches;
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin-right: 8px;
+          }
+
+          input{
+            width: 220px;
+            &:hover{
+              cursor: pointer;
+            }
+            &:focus{
+              outline: none !important;
+              border: 2px solid rgb(168, 216, 36);
+
+            }
+          }
+        }
+
+        .form-password{
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          align-self: flex-start;
+          margin-bottom: 30px;
+          margin-left: 10px;
+
+          .password-label{
+            font-family: Staatliches;
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin-right: 5px;
+          }
+
+          input{
+            width: 220px;
+            // border-radius: 5px;
+            &:hover{
+              cursor: pointer;
+            }
+            &:focus{
+              outline: none !important;
+              border: 2px solid rgb(168, 216, 36);
+
+            }
+          }
+        }
+
+        .submit-button{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+
+          button{
+            height: 25px;
+            width: 200px;
+            border: none;
+            background-color: blue;
+            color: aliceblue;
+            border-radius: 10px;
+            &:hover{
+              cursor: pointer;
+              border: 1px solid white;
+            }
+          }
+        }
+
+        .navigate{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          align-self: center;
+          align-content: center;
+          margin-top: 20px;
+          font-family: Staatliches;
+          font-size: 14px;
+
+          .back{
+            margin-bottom: 5px;
+
+            a{
+              color: black;
+              text-decoration: none;
+              &:hover{
+                color: blue;
+              }
+            }
+
+            div{
+              cursor: pointer;
+              color: black;
+              text-decoration: none;
+              &:hover{
+                color: blue;
+              }
+            }
+          }
+
+          .forgot-password{
+
+            a{
+              color: black;
+              text-decoration: none;
+              &:hover{
+                color: blue;
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+
+
+}

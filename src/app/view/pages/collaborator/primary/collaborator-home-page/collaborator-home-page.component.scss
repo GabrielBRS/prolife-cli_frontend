@@ -1,0 +1,94 @@
+.body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-height: 0;
+  min-width: 0;
+  height: 100%;
+  width: 100%;
+
+  .navbar-body{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 90px;
+    background-color: mediumslateblue;
+
+    .component-app-navbar-commercial{
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      height: 100%;
+    }
+  }
+}
+
+.credentials{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  margin-top: 90px;
+  width: 100%;
+  height: 100%;
+
+  .credentials-component-config{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  // align-items: center;
+  // justify-content: center;
+  // align-self: center;
+  // align-content: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+
+  .right-aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    align-self: flex-start;
+    align-content: flex-start;
+    background-color: blue;
+    // width: 300px;
+    // min-height: 800px;
+    flex: 1;
+  }
+
+  .show-middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:baseline;
+    align-self: center;
+    align-content: center;
+    background-color: red;
+    flex: 4;
+
+  }
+
+}

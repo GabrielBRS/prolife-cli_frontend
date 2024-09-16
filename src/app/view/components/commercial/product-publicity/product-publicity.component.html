@@ -1,0 +1,43 @@
+<div class="body">
+  <div class="title">Prolife Cli</div>
+  <div class="text-container">
+    <div class="container">
+      <div class="text">
+        O futuro finalmente chegou. Agora podemos usar o que há de mais avançado na tecnologia para prever doenças,
+        e não somente isso, mas também em chegar em diagnósticos com a mais alta precisão. Isso só é possível graças
+        aos grandes avanços da Inteligência Artificial no mundo da computação. Agora com o auxílio da Engenharia de Software
+        nossos médicos podem fazer diagnósticos com a mais alta precisão e com chances mínimas de erros como também prever
+        doenças.
+      </div>
+      <div class="info-text">
+        <a>Quer saber mais sobre a Inteligência Artificial?</a>
+      </div>
+      <div class="buttons">
+        <div class="button" (click)="change(1)"></div>
+        <div class="button" (click)="change(2)"></div>
+        <div class="button" (click)="change(3)"></div>
+      </div>
+    </div>
+    <div class="images" *ngIf="showContent===1">
+
+    </div>
+    <div class="images" style="background-color: blue;" *ngIf="showContent===2">
+
+    </div>
+    <div class="images" style="background-color: green;" *ngIf="showContent===3">
+
+    </div>
+  </div>
+  <div class="title">Produtos</div>
+  <div>
+    O futuro é agora
+  </div>
+  <div class="container-products">
+    <div class="products">
+      Previsão de doenças por diagnóstico
+    </div>
+    <div class="products">
+      Dermatologia avançada
+    </div>
+  </div>
+</div>

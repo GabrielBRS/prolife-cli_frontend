@@ -1,0 +1,15 @@
+<div class="body">
+  <div class="navbar-body">
+    <app-navbar-doctor class="component-app-navbar-commercial"></app-navbar-doctor>
+  </div>
+  <div class="credentials">
+    <app-credentials-doctor class="credentials-component-config" [status]="userData.userTypeDescription" [fullName]="userData.name" [cpf]="userData.cpf"></app-credentials-doctor>
+  </div>
+  <div class="content">
+    <div class="show-middle">
+      <div class="container">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
